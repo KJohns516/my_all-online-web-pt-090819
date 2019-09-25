@@ -1,8 +1,8 @@
 require_relative 'spec_helper'
-require_relative '../lib/my_all.rb'
+require_relative 'my_spec.rb'
 
 describe "#my_all?" do
-  let(:collection) yield { [1, 2, 3] }
+  let(:collection) { [1, 2, 3] }
 
   it "does not call on all?" do
     expect(collection).to_not receive(:all?)
